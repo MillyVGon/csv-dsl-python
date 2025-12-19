@@ -5,7 +5,8 @@ Este projeto implementa uma Linguagem Específica de Domínio (DSL) voltada para
 A DSL oferece suporte a comandos como carregamento de arquivos, filtragem de dados, seleção de colunas, agrupamento, ordenação, atualização de valores, junção entre tabelas, remoção de duplicatas e exportação para JSON. Internamente, o projeto utiliza uma tabela de símbolos baseada em Árvore Binária de Busca (BST) para gerenciamento de identificadores, além de um analisador léxico e sintático completos.
 
 ## Exemplo de Uso
- 1 > LOAD "organizations.csv"       
+```text
+ 1 > LOAD "organizations.csv"
  2 > FILTER "Industry" = "Plastics"
  3 > SELECT "Name", "Website", "Number of employees"
  4 > SORT_BY "Number of employees" ASC
